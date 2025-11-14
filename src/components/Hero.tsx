@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { ArrowDown } from "lucide-react";
 import laylaPhoto from "@/assets/sudan-people.jpg";
+import sudanFlag from "@/assets/sudan-flag-clean.png";
 
 export const Hero = () => {
   const scrollToDonate = () => {
@@ -8,9 +9,22 @@ export const Hero = () => {
   };
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-gold/20 via-background to-rose/10">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+      {/* Sudan flag background */}
+      <div 
+        className="absolute inset-0 z-0"
+        style={{
+          backgroundImage: `url(${sudanFlag})`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'top center',
+          backgroundRepeat: 'no-repeat',
+        }}
+      >
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-background/70 to-background" />
+      </div>
+      
       {/* Animated background particles */}
-      <div className="absolute inset-0 overflow-hidden">
+      <div className="absolute inset-0 overflow-hidden z-0">
         <div className="absolute top-20 left-10 w-72 h-72 bg-gold/10 rounded-full blur-3xl animate-pulse" />
         <div className="absolute bottom-20 right-10 w-96 h-96 bg-rose/10 rounded-full blur-3xl animate-pulse delay-1000" />
       </div>
