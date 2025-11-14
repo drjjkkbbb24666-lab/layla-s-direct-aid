@@ -19,7 +19,7 @@ export const Story = () => {
               
               <div className="space-y-4 text-lg leading-relaxed text-muted-foreground">
                 <p>
-                  Layla is a <span className="font-semibold text-foreground">21-year-old Sudanese refugee</span> from Khartoum, once a computer science student at the University of Khartoum.
+                  I am a <span className="font-semibold text-foreground">21-year-old Sudanese refugee</span> from Khartoum, once a computer science student at the University of Khartoum.
                 </p>
                 
                 <p className="border-l-4 border-gold pl-4 italic text-foreground">
@@ -27,15 +27,15 @@ export const Story = () => {
                 </p>
                 
                 <p>
-                  Her university was bombed, her neighborhood destroyed, and her family's savings wiped out when banks and ATMs collapsed. She fled to Nairobi with only a laptop and her clothes.
+                  My university was bombed, her neighborhood destroyed, and my family's savings wiped out when banks and ATMs collapsed. I fled to Nairobi with only a laptop and a few clothes.
                 </p>
                 
                 <p>
-                  Now living as an asylum seeker with <span className="font-semibold text-foreground">no work permit, no financial access, and no safety net</span>, she uses the internet as her lifeline.
+                  Now living as an asylum seeker with <span className="font-semibold text-foreground">no work permit, no financial access, and no safety net</span>, I use the internet as my  lifeline.
                 </p>
                 
                 <p className="text-foreground font-medium">
-                  Crypto has become her only functional financial system — allowing her to receive support and survive without a bank.
+                  Crypto has become  my only functional financial system — allowing me to receive support and survive without a bank.
                 </p>
               </div>
 
@@ -51,22 +51,22 @@ export const Story = () => {
                   </DialogHeader>
                   <div className="space-y-4 text-base leading-relaxed">
                     <p>
-                      Layla is a 21-year-old Sudanese refugee from Khartoum, once a computer science student at the University of Khartoum. On April 15, 2023, war shattered her life as RSF and SAF forces turned the capital into a battlefield.
+                      I am a 21-year-old Sudanese refugee from Khartoum, once a computer science student at the University of Khartoum. On April 15, 2023, war shattered my life as RSF and SAF forces turned the capital into a battlefield.
                     </p>
                     <p>
-                      Her university was bombed, her neighborhood destroyed, and her family's savings wiped out when banks and ATMs collapsed. She fled to Nairobi with only a laptop and her clothes.
+                      My university was bombed, my neighborhood destroyed, and my family's savings wiped out when banks and ATMs collapsed. I fled to Nairobi with only a laptop and her clothes.
                     </p>
                     <p>
-                      Now living as an asylum seeker with no work permit, no financial access, and no safety net, she uses the internet as her lifeline.
+                      Now living as an asylum seeker with no work permit, no financial access, and no safety net, I uses the internet as her lifeline.
                     </p>
                     <p className="font-semibold">
                       Crypto has become her only functional financial system — allowing her to receive support and survive without a bank.
                     </p>
                     <p>
-                      This website gives her back what war tried to take away: her voice, her identity, and her dignity. Every donation goes directly to her, helping her afford food, medicine, internet access, and saving for her education.
+                      This website gives me  back what war tried to take away: my voice, her identity, and her dignity. Every donation goes directly to my account, helping me afford food, medicine, internet access, and saving for  my education.
                     </p>
                     <p>
-                      She dreams of completing her computer science degree and using technology to help other refugees find their voices and rebuild their lives.
+                      I dream of completing her computer science degree and using technology to help other refugees find their voices and rebuild their lives.
                     </p>
                   </div>
                 </DialogContent>
