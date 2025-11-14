@@ -6,22 +6,28 @@ import { toast } from "sonner";
 
 const wallets = [
   {
-    name: "Ethereum (ETH)",
-    address: "0x742d35Cc6634C0532925a3b844Bc9e7595f0bEb",
-    icon: Wallet,
-    color: "from-blue-500 to-purple-500",
+    name: "Bitcoin (BTC)",
+    address: "bc1q4nm6zw4pg2qx2p844tfrp5sfuryqcveuuxtjxd",
+    icon: Bitcoin,
+    color: "from-orange-500 to-yellow-500",
   },
   {
     name: "USDT (TRC20)",
-    address: "TYourUSDTAddressHere123456789",
+    address: "TMvTALDh2vcyWjvERsUyojnfen7VpwUnuC",
     icon: Wallet,
     color: "from-green-500 to-emerald-500",
   },
   {
-    name: "Bitcoin (BTC)",
-    address: "bc1qYourBitcoinAddressHere",
-    icon: Bitcoin,
-    color: "from-orange-500 to-yellow-500",
+    name: "USDT (ERC20)",
+    address: "0xA4Ae061254E88EEfe21F318102f1453c7d728bcB",
+    icon: Wallet,
+    color: "from-teal-500 to-cyan-500",
+  },
+  {
+    name: "Ethereum (ETH)",
+    address: "0xA4Ae061254E88EEfe21F318102f1453c7d728bcB",
+    icon: Wallet,
+    color: "from-blue-500 to-purple-500",
   },
 ];
 
