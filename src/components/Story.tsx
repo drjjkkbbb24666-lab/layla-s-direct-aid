@@ -16,28 +16,36 @@ export const Story = () => {
             {/* Text content */}
             <div className="space-y-6 animate-fade-in">
               <h2 className="text-4xl md:text-5xl font-serif font-bold text-foreground">
-                Layla's Story
+                Leila Amina's Story
               </h2>
               
+              <p className="text-xl font-semibold text-gold italic">
+                "From Khartoum's classrooms to Nairobi's code cafes — rebuilding a future through tech."
+              </p>
+              
               <div className="space-y-4 text-lg leading-relaxed text-muted-foreground">
-                <p>
-                  I am a <span className="font-semibold text-foreground">21-year-old Sudanese refugee</span> from Khartoum, once a computer science student at the University of Khartoum.
-                </p>
-                
-                <p className="border-l-4 border-gold pl-4 italic text-foreground">
-                  "On April 15, 2023, war shattered my life as RSF and SAF forces turned the capital into a battlefield."
+                <p className="text-foreground font-medium text-xl">
+                  My name is Leila Amina — a Sudanese refugee, a daughter of Khartoum, and a computer science student who refuses to let war decide the limits of my future.
                 </p>
                 
                 <p>
-                  My university was bombed, her neighborhood destroyed, and my family's savings wiped out when banks and ATMs collapsed. I fled to Nairobi with only a laptop and a few clothes.
+                  When the conflict erupted back home, I was in my third year of university — debugging code one week, searching for safety the next. Everything familiar disappeared in days: my home, my campus, my city's rhythm. But one thing survived the journey — <span className="font-semibold text-foreground">my belief that education and technology can rebuild lives</span>.
                 </p>
                 
                 <p>
-                  Now living as an asylum seeker with <span className="font-semibold text-foreground">no work permit, no financial access, and no safety net</span>, I use the internet as my  lifeline.
+                  Today I am an asylum seeker in Nairobi, rebuilding from scratch. I spend my days learning, coding, and designing Web3 tools that I hope will one day power real solutions for displaced communities like mine. I work from borrowed devices, unstable internet, and shared rooms — but I keep going because <span className="font-semibold text-foreground">knowledge is the one thing no war can erase</span>.
+                </p>
+                
+                <p className="border-l-4 border-gold pl-4 text-foreground font-medium">
+                  I am asking for support not because I have given up, but because I am fighting not to stop. Every donation helps me stay housed, stay online, buy the resources needed for my projects, and eventually return to university to finish my computer science degree.
                 </p>
                 
                 <p className="text-foreground font-medium">
-                  Crypto has become  my only functional financial system — allowing me to receive support and survive without a bank.
+                  Your contribution is an investment — in my education, in my work, and in a future where refugees can build, not just survive.
+                </p>
+                
+                <p className="text-lg text-foreground font-semibold italic">
+                  If you believe in resilience, in rebuilding, and in the power of technology to restore dignity, I invite you to walk with me.
                 </p>
               </div>
 
@@ -49,26 +57,35 @@ export const Story = () => {
                 </DialogTrigger>
                 <DialogContent className="max-w-2xl max-h-[80vh] overflow-y-auto">
                   <DialogHeader>
-                    <DialogTitle className="text-3xl font-serif">Amina Layla's Full Story</DialogTitle>
+                    <DialogTitle className="text-3xl font-serif">Leila Amina's Full Story</DialogTitle>
                   </DialogHeader>
                   <div className="space-y-4 text-base leading-relaxed">
-                    <p>
-                      I am a 21-year-old Sudanese refugee from Khartoum, once a computer science student at the University of Khartoum. On April 15, 2023, war shattered my life as RSF and SAF forces turned the capital into a battlefield.
+                    <p className="font-semibold text-lg">
+                      Leila grew up in Khartoum, surrounded by the hum of university life, where she dreamed of becoming a software engineer.
                     </p>
+                    
                     <p>
-                      My university was bombed, my neighborhood destroyed, and my family's savings wiped out when banks and ATMs collapsed. I fled to Nairobi with only a laptop and her clothes.
+                      She loved building simple apps, tutoring younger students, and brainstorming tech solutions for Sudanese communities. Her third year of university was supposed to be her turning point.
                     </p>
-                    <p>
-                      Now living as an asylum seeker with no work permit, no financial access, and no safety net, I uses the internet as her lifeline.
-                    </p>
+                    
                     <p className="font-semibold">
-                      Crypto has become her only functional financial system — allowing her to receive support and survive without a bank.
+                      Then war shattered everything.
                     </p>
+                    
                     <p>
-                      This website gives me  back what war tried to take away: my voice, her identity, and her dignity. Every donation goes directly to my account, helping me afford food, medicine, internet access, and saving for  my education.
+                      Leila fled with only what she could carry, leaving her degree unfinished, her home destroyed, and her family scattered across borders. She arrived in Kenya with no savings, no documents, and no certainty — only determination.
                     </p>
+                    
                     <p>
-                      I dream of completing her computer science degree and using technology to help other refugees find their voices and rebuild their lives.
+                      Instead of giving up, she reinvented herself. She taught herself advanced JavaScript, blockchain fundamentals, and smart contract development from online tutorials and borrowed devices. She now works on open-source Web3 projects while navigating asylum procedures and unstable living conditions.
+                    </p>
+                    
+                    <p className="font-semibold text-foreground">
+                      Leila doesn't want a handout — she wants a chance to finish what she started.
+                    </p>
+                    
+                    <p>
+                      Donations help her access stable housing, equipment, and school fees, giving her the foundation she needs to become the engineer she trained to be. Every contribution is an investment in her education, her work, and a future where technology restores dignity to displaced communities.
                     </p>
                   </div>
                 </DialogContent>
