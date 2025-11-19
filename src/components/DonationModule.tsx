@@ -51,10 +51,10 @@ export const DonationModule = () => {
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12 space-y-4">
             <h2 className="text-4xl md:text-5xl font-serif font-bold text-foreground">
-              Support Layla Directly
+              Support Me Directly
             </h2>
             <p className="text-xl text-muted-foreground">
-              Send cryptocurrency directly to Layla's wallet. No intermediaries, no fees to us.
+              Send cryptocurrency directly to my wallet. No intermediaries, no fees to anyone else.
             </p>
           </div>
 
@@ -94,7 +94,7 @@ export const DonationModule = () => {
 
           <div className="mt-8 p-6 bg-blue-50 dark:bg-blue-950/20 rounded-lg border border-blue-200 dark:border-blue-900">
             <p className="text-center text-sm text-blue-900 dark:text-blue-100">
-              <strong>All donations go directly to Layla's wallet.</strong> No intermediaries. No fees to us. 
+              <strong>All donations go directly to my wallet.</strong> No intermediaries. No fees to anyone else. 
               If you'd like to donate in a different cryptocurrency, please reach out.
             </p>
           </div>

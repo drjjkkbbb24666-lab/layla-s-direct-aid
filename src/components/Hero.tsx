@@ -53,7 +53,7 @@ export const Hero = () => {
               
               {/* Tagline */}
               <p className="text-xl md:text-2xl lg:text-3xl font-light text-muted-foreground leading-relaxed">
-                "I survived a war. Now I'm rebuilding my life — with your help, directly."
+                "From Khartoum's classrooms to Nairobi's code cafes — rebuilding a future through tech."
               </p>
 
               {/* CTA Button */}
@@ -63,7 +63,7 @@ export const Hero = () => {
                   size="lg"
                   className="bg-gradient-to-r from-gold to-primary hover:shadow-glow transition-all duration-300 text-lg px-8 py-6 group"
                 >
-                  Support Layla via Crypto
+                  Support Me via Crypto
                   <ArrowDown className="ml-2 group-hover:translate-y-1 transition-transform" />
                 </Button>
               </div>

@@ -5,7 +5,7 @@ const features = [
   {
     icon: Shield,
     title: "No Bank Required",
-    description: "Refugees often cannot open bank accounts. Crypto provides access where traditional finance fails.",
+    description: "As a refugee, I often cannot open bank accounts. Crypto provides access where traditional finance fails.",
   },
   {
     icon: Globe,
@@ -15,12 +15,12 @@ const features = [
   {
     icon: Zap,
     title: "No Middlemen",
-    description: "100% of every donation goes directly to Layla. No NGOs, no intermediaries, no hidden fees.",
+    description: "100% of every donation goes directly to me. No NGOs, no intermediaries, no hidden fees.",
   },
   {
     icon: Heart,
     title: "Direct Impact",
-    description: "She can buy food, medicine, internet access, or save for education. Your support creates real change.",
+    description: "I can buy food, medicine, internet access, or save for education. Your support creates real change.",
   },
 ];
 
@@ -34,7 +34,7 @@ export const WhyCrypto = () => {
               Why Cryptocurrency?
             </h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              For refugees like Layla, crypto isn't just technology — it's survival
+              For me, crypto isn't just technology — it's survival
             </p>
           </div>
 

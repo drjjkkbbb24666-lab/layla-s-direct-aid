@@ -13,11 +13,11 @@ export const CallToAction = () => {
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-4xl mx-auto text-center space-y-8">
           <h2 className="text-4xl md:text-6xl font-serif font-bold text-white">
-            Support Layla's Journey — Help Her Rebuild Her Life
+            Support My Journey — Help Me Rebuild My Life
           </h2>
           
           <p className="text-xl md:text-2xl text-white/90 max-w-2xl mx-auto">
-            Every donation makes a real difference. Help Layla access food, medicine, education, and hope.
+            Every donation makes a real difference. Help me access food, medicine, education, and hope.
           </p>
 
           <Button 
