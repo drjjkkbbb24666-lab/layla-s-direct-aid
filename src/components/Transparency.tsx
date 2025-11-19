@@ -1,7 +1,7 @@
 import { CheckCircle2 } from "lucide-react";
 
 const points = [
-  "This is Layla's direct page, managed by her",
+  "This is my direct page, managed by me",
   "Donations are peer-to-peer cryptocurrency transfers",
   "No organization holds or distributes funds",
   "Crypto ensures direct transfer with proof on-chain",
