@@ -2,6 +2,8 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
 import sudanPeople from "@/assets/sudan-people.jpg";
+import nairobiLiving from "@/assets/nairobi-living.jpg";
+import khartoumUniversity from "@/assets/khartoum-university.jpg";
 
 export const Story = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -73,15 +75,36 @@ export const Story = () => {
               </Dialog>
             </div>
 
-            {/* Image */}
-            <div className="relative animate-fade-in">
+            {/* Images Grid */}
+            <div className="space-y-6 animate-fade-in">
+              {/* Khartoum University - Destroyed */}
               <div className="relative rounded-2xl overflow-hidden shadow-soft">
                 <img 
-                  src={sudanPeople} 
-                  alt="Sudanese people with flag" 
+                  src={khartoumUniversity} 
+                  alt="Destroyed University of Khartoum building" 
                   className="w-full h-auto object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-deep-brown/40 to-transparent" />
+                <div className="absolute bottom-4 left-4 right-4">
+                  <p className="text-white text-sm font-medium bg-black/50 backdrop-blur-sm px-3 py-2 rounded">
+                    University of Khartoum - Destroyed by war
+                  </p>
+                </div>
+              </div>
+
+              {/* Current Living Conditions in Nairobi */}
+              <div className="relative rounded-2xl overflow-hidden shadow-soft">
+                <img 
+                  src={nairobiLiving} 
+                  alt="Layla's living conditions in Nairobi" 
+                  className="w-full h-auto object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-deep-brown/40 to-transparent" />
+                <div className="absolute bottom-4 left-4 right-4">
+                  <p className="text-white text-sm font-medium bg-black/50 backdrop-blur-sm px-3 py-2 rounded">
+                    Current living conditions in Nairobi
+                  </p>
+                </div>
               </div>
             </div>
           </div>
