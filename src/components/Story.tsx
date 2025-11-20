@@ -1,126 +1,186 @@
-import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
-import sudanPeople from "@/assets/sudan-people.jpg";
-import nairobiLiving from "@/assets/nairobi-living.jpg";
-import khartoumUniversity from "@/assets/khartoum-university.jpg";
+import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
+import { useState } from "react";
+import khartoumPhoto from "@/assets/khartoum-university.jpg";
+import nairobiPhoto from "@/assets/nairobi-living.jpg";
 
 export const Story = () => {
-  const [isOpen, setIsOpen] = useState(false);
+  const [open, setOpen] = useState(false);
 
   return (
     <section className="py-20 bg-gradient-to-b from-background to-secondary/30">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            {/* Text content */}
-            <div className="space-y-6 animate-fade-in">
-              <h2 className="text-4xl md:text-5xl font-serif font-bold text-foreground">
-                Leila Amina's Story
+          <div className="grid md:grid-cols-2 gap-12 items-start">
+            {/* Story text */}
+            <div className="space-y-6">
+              <h2 className="text-4xl md:text-5xl font-serif font-bold text-foreground mb-6">
+                My Name Is Layla — This Is My Story
               </h2>
               
-              <p className="text-xl font-semibold text-gold italic">
-                "From Khartoum's classrooms to Nairobi's code cafes — rebuilding a future through tech."
-              </p>
-              
-              <div className="space-y-4 text-lg leading-relaxed text-muted-foreground">
-                <p className="text-foreground font-medium text-xl">
-                  My name is Leila Amina — a Sudanese refugee, a daughter of Khartoum, and a computer science student who refuses to let war decide the limits of my future.
+              <div className="space-y-4 text-lg text-muted-foreground leading-relaxed">
+                <p>
+                  I am 21 years old, and before the war, my life was simple: finish my computer science degree, build technology that could help my country, and make my parents proud. I was born and raised in Khartoum — a city that once beat with the rhythm of markets, students, and endless dreams. I was a second-year computer science student at the University of Khartoum, one of Africa's oldest institutions.
+                </p>
+                
+                <p className="font-semibold text-foreground">
+                  But on April 15, 2023, everything I knew became a memory.
                 </p>
                 
                 <p>
-                  When the conflict erupted back home, I was in my third year of university — debugging code one week, searching for safety the next. Everything familiar disappeared in days: my home, my campus, my city's rhythm. But one thing survived the journey — <span className="font-semibold text-foreground">my belief that education and technology can rebuild lives</span>.
+                  That day, the RSF and SAF plunged my city into hell. My university was shelled. My street became a battlefield. My neighborhood, my city, where I learned to ride a bicycle, where I studied, where I laughed, turned into a graveyard.
                 </p>
                 
                 <p>
-                  Today I am an asylum seeker in Nairobi, rebuilding from scratch. I spend my days learning, coding, and designing Web3 tools that I hope will one day power real solutions for displaced communities like mine. I work from borrowed devices, unstable internet, and shared rooms — but I keep going because <span className="font-semibold text-foreground">knowledge is the one thing no war can erase</span>.
+                  I watched relatives bleed to death in front of me. Others vanished in the chaos — missing, presumed gone. Something people don't tell you is that during war people lose their minds. My mother, having seen the death of my younger brother, her only son, lost her mind. She was never the same again and she refused to flee. I hope I can see her again.
                 </p>
                 
-                <p className="border-l-4 border-gold pl-4 text-foreground font-medium">
-                  I am asking for support not because I have given up, but because I am fighting not to stop. Every donation helps me stay housed, stay online, buy the resources needed for my projects, and eventually return to university to finish my computer science degree.
-                </p>
-                
-                <p className="text-foreground font-medium">
-                  Your contribution is an investment — in my education, in my work, and in a future where refugees can build, not just survive.
-                </p>
-                
-                <p className="text-lg text-foreground font-semibold italic">
-                  If you believe in resilience, in rebuilding, and in the power of technology to restore dignity, I invite you to walk with me.
+                <p className="font-semibold text-foreground">
+                  I don't want a handout — I want a chance to finish what I started. Your support helps me access stable housing, equipment, and school fees, giving me the foundation I need to become the engineer I trained to be.
                 </p>
               </div>
 
-              <Dialog open={isOpen} onOpenChange={setIsOpen}>
+              <Dialog open={open} onOpenChange={setOpen}>
                 <DialogTrigger asChild>
-                  <Button variant="outline" className="mt-4">
+                  <Button size="lg" variant="outline" className="mt-4">
                     Read Full Story
                   </Button>
                 </DialogTrigger>
-                <DialogContent className="max-w-2xl max-h-[80vh] overflow-y-auto">
+                <DialogContent className="max-w-3xl max-h-[80vh] overflow-y-auto">
                   <DialogHeader>
-                    <DialogTitle className="text-3xl font-serif">Leila Amina's Full Story</DialogTitle>
+                    <DialogTitle className="text-2xl font-serif">Layla's Full Story</DialogTitle>
+                    <DialogDescription className="sr-only">
+                      The complete story of Layla's journey from Sudan to Kenya
+                    </DialogDescription>
                   </DialogHeader>
-                  <div className="space-y-4 text-base leading-relaxed">
-                    <p className="font-semibold text-lg">
-                      Leila grew up in Khartoum, surrounded by the hum of university life, where she dreamed of becoming a software engineer.
-                    </p>
-                    
+                  <div className="space-y-4 text-base leading-relaxed pt-4">
                     <p>
-                      She loved building simple apps, tutoring younger students, and brainstorming tech solutions for Sudanese communities. Her third year of university was supposed to be her turning point.
+                      I am 21 years old, and before the war, my life was simple: finish my computer science degree, build technology that could help my country, and make my parents proud. I was born and raised in Khartoum — a city that once beat with the rhythm of markets, students, and endless dreams. I was a second-year computer science student at the University of Khartoum, one of Africa's oldest institutions.
                     </p>
                     
                     <p className="font-semibold">
-                      Then war shattered everything.
+                      But on April 15, 2023, everything I knew became a memory.
                     </p>
                     
                     <p>
-                      Leila fled with only what she could carry, leaving her degree unfinished, her home destroyed, and her family scattered across borders. She arrived in Kenya with no savings, no documents, and no certainty — only determination.
+                      That day, the RSF and SAF plunged my city into hell. My university was shelled. My street became a battlefield. My neighborhood, my city, where I learned to ride a bicycle, where I studied, where I laughed, turned into a graveyard.
                     </p>
                     
                     <p>
-                      Instead of giving up, she reinvented herself. She taught herself advanced JavaScript, blockchain fundamentals, and smart contract development from online tutorials and borrowed devices. She now works on open-source Web3 projects while navigating asylum procedures and unstable living conditions.
-                    </p>
-                    
-                    <p className="font-semibold text-foreground">
-                      Leila doesn't want a handout — she wants a chance to finish what she started.
+                      I watched relatives bleed to death in front of me. Others vanished in the chaos — missing, presumed gone. Something people don't tell you is that during war people lose their minds. My mother, having seen the death of my younger brother, her only son, lost her mind. She was never the same again and she refused to flee. I hope I can see her again.
                     </p>
                     
                     <p>
-                      Donations help her access stable housing, equipment, and school fees, giving her the foundation she needs to become the engineer she trained to be. Every contribution is an investment in her education, her work, and a future where technology restores dignity to displaced communities.
+                      The air smelled of smoke, blood, and things I will never be able to describe.
+                    </p>
+                    
+                    <p className="font-semibold">
+                      Then came the choice every Sudanese family now knows too well: Stay and die, or run and risk dying on the road.
+                    </p>
+                    
+                    <p>
+                      Not on a bus. Not on a plane. But hidden inside the back of a lorry meant for transporting goods — not human beings.
+                    </p>
+                    
+                    <p>
+                      There were nearly twenty of us packed into the darkness between sacks of flour and jerrycans of fuel. For hours that felt like years, we stayed silent as the lorry crawled through RSF checkpoints. One wrong sound, one misplaced breath, and the soldiers would have dragged us out, one by one.
+                    </p>
+                    
+                    <p>
+                      Twice they stopped us. On entry to Ethiopia. We could have ran to Chad but our smugglers chose this longer way, illegal or not, I thank them. Twice guns were pointed into the darkness where we hid. Twice I thought my life would end before it ever began.
+                    </p>
+                    
+                    <p>
+                      I survived only because Allah said not yet.
+                    </p>
+                    
+                    <p>
+                      The journey from Sudan to Kenya bled me dry. Smugglers demanded money I didn't have. Borders demanded papers I had lost while running. Every mile carried a story of someone who didn't make it.
+                    </p>
+                    
+                    <p>
+                      By the time I reached Nairobi in late 2024, I was alive, but shattered.
+                    </p>
+                    
+                    <p className="font-semibold">
+                      As an asylum seeker, I discovered another kind of suffering — the silent kind.
+                    </p>
+                    
+                    <p>
+                      Without the right documents, I could not open a bank account, access mobile money, or work legally. Every attempt to live normally ended with: "You don't have the required documents."
+                    </p>
+                    
+                    <p>
+                      I had escaped bullets, only to be trapped by bureaucracy.
+                    </p>
+                    
+                    <p>
+                      But in this room in Nairobi, something survived the war with me: my laptop and the knowledge I got from university before everything fell apart. Basic coding. Web development. The logic of how computers communicate. Skills that seemed small before the war now felt like salvation.
+                    </p>
+                    
+                    <p className="font-semibold">
+                      Technology became the one thing the violence could not take from me.
+                    </p>
+                    
+                    <p>
+                      I taught myself more — JavaScript, blockchain basics, smart contract development. I am building simple tools. I am trying to create Voices Unbound to help people without documents and without voices like myself.
+                    </p>
+                    
+                    <p>
+                      This website is my attempt to speak directly to the world — without NGOs twisting my story or collecting money in my name. I want people to understand what it means to flee, to hide, to lose everything, and still try to build something new from the ashes.
+                    </p>
+                    
+                    <p>
+                      I have cousins I send aid in AlFasher. I wish they had run with me. But I cannot stop praying and I hope you too are praying with me as you see this.
+                    </p>
+                    
+                    <p className="font-semibold">
+                      I am not a victim of war. I am a survivor of it — and a student who refuses to let her education end in rubble.
+                    </p>
+                    
+                    <p>
+                      If my story moved you, and you believe in helping someone rebuild a life through education and technology, any support you offer will help me continue this journey — to finish my degree, to improve my living conditions, and to create a future my fallen relatives never got to see.
+                    </p>
+                    
+                    <p className="italic">
+                      If you are Muslim, take this as a form of Zakat.
+                    </p>
+                    
+                    <p className="font-semibold">
+                      But first, I want you to know who I am. I want you to know the truth. I want you to know Layla.
                     </p>
                   </div>
                 </DialogContent>
               </Dialog>
             </div>
 
-            {/* Images Grid */}
+            {/* Images */}
             <div className="space-y-6 animate-fade-in">
-              {/* Khartoum University - Destroyed */}
-              <div className="relative rounded-2xl overflow-hidden shadow-soft">
-                <img 
-                  src={khartoumUniversity} 
-                  alt="Destroyed University of Khartoum building" 
-                  className="w-full h-auto object-cover"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-deep-brown/40 to-transparent" />
-                <div className="absolute bottom-4 left-4 right-4">
-                  <p className="text-white text-sm font-medium bg-black/50 backdrop-blur-sm px-3 py-2 rounded">
-                    University of Khartoum - Destroyed by war
-                  </p>
+              <div className="relative group">
+                <div className="absolute inset-0 bg-gradient-to-br from-gold/20 to-rose/20 rounded-2xl blur-xl group-hover:blur-2xl transition-all" />
+                <div className="relative">
+                  <img 
+                    src={khartoumPhoto} 
+                    alt="University of Khartoum before the war" 
+                    className="rounded-2xl shadow-xl w-full h-auto"
+                  />
+                  <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4 rounded-b-2xl">
+                    <p className="text-white text-sm font-medium">University of Khartoum — where my dreams began</p>
+                  </div>
                 </div>
               </div>
 
-              {/* Current Living Conditions in Nairobi */}
-              <div className="relative rounded-2xl overflow-hidden shadow-soft">
-                <img 
-                  src={nairobiLiving} 
-                  alt="Layla's living conditions in Nairobi" 
-                  className="w-full h-auto object-cover"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-deep-brown/40 to-transparent" />
-                <div className="absolute bottom-4 left-4 right-4">
-                  <p className="text-white text-sm font-medium bg-black/50 backdrop-blur-sm px-3 py-2 rounded">
-                    Current living conditions in Nairobi
-                  </p>
+              <div className="relative group">
+                <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-gold/20 rounded-2xl blur-xl group-hover:blur-2xl transition-all" />
+                <div className="relative">
+                  <img 
+                    src={nairobiPhoto} 
+                    alt="Current living conditions in Nairobi" 
+                    className="rounded-2xl shadow-xl w-full h-auto"
+                  />
+                  <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4 rounded-b-2xl">
+                    <p className="text-white text-sm font-medium">Nairobi — where I'm rebuilding</p>
+                  </div>
                 </div>
               </div>
             </div>
