@@ -43,6 +43,22 @@ export const Hero = () => {
                 />
               </div>
               
+              {/* Personal Narrative */}
+              <div className="space-y-4 text-center md:text-left">
+                <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
+                  I fled Sudan hidden inside a lorry meant for cargo. This war I have seen with all my senses. 
+                  But I carried one thing through the war, the borders, the bloodshed — my laptop. 
+                  It's how I made this web app.
+                </p>
+                <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
+                  I am a 21-year-old Sudanese refugee, a computer science student whose education was shattered by war.
+                </p>
+                <p className="text-base md:text-lg font-medium text-foreground leading-relaxed">
+                  But I'm still coding. I'm still learning. I'm still fighting for a future they tried to destroy! 
+                  <span className="text-primary font-semibold"> Help me build it.</span>
+                </p>
+              </div>
+              
               {/* CTA Button */}
               <div className="flex justify-center md:justify-start">
                 <Button 
