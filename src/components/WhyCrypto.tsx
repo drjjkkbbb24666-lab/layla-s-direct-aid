@@ -1,26 +1,30 @@
-import { Shield, Globe, Zap, Heart } from "lucide-react";
+import { Skull, Users, Home, AlertTriangle } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 
-const features = [
+const statistics = [
   {
-    icon: Shield,
-    title: "No Bank Required",
-    description: "As a refugee, I often cannot open bank accounts. Crypto provides access where traditional finance fails.",
+    icon: Skull,
+    number: "150,000+",
+    title: "Lives Lost",
+    description: "Estimated deaths since April 2023 from violence, starvation, and disease caused by the RSF-SAF conflict.",
   },
   {
-    icon: Globe,
-    title: "Borderless Support",
-    description: "Send money across borders instantly without restrictions, fees, or delays from traditional systems.",
+    icon: Users,
+    title: "11+ Million",
+    number: "11+ Million",
+    description: "Displaced Sudanese — the largest displacement crisis in the world. Families torn apart, cities emptied.",
   },
   {
-    icon: Zap,
-    title: "No Middlemen",
-    description: "100% of every donation goes directly to me. No NGOs, no intermediaries, no hidden fees.",
+    icon: Home,
+    number: "2.3+ Million",
+    title: "Refugees Abroad",
+    description: "Sudanese who fled to neighboring countries like Chad, Egypt, Ethiopia, and Kenya — seeking safety that never feels safe.",
   },
   {
-    icon: Heart,
-    title: "Direct Impact",
-    description: "I can buy food, medicine, internet access, or save for education. Your support creates real change.",
+    icon: AlertTriangle,
+    number: "25+ Million",
+    title: "Need Humanitarian Aid",
+    description: "Half of Sudan's population faces famine, disease, and survival conditions. The world has forgotten us.",
   },
 ];
 
@@ -31,32 +35,41 @@ export const WhyCrypto = () => {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16 space-y-4">
             <h2 className="text-4xl md:text-5xl font-serif font-bold text-foreground">
-              Why Cryptocurrency?
+              Pray for Sudan
             </h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              For me, crypto isn't just technology — it's survival
+              The world's largest displacement crisis — and the world stays silent
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {features.map((feature, index) => (
+            {statistics.map((stat, index) => (
               <Card 
                 key={index}
-                className="border-border/50 hover:border-primary/50 transition-all duration-300 hover:shadow-soft hover:-translate-y-1 bg-card/50 backdrop-blur"
+                className="border-border/50 hover:border-destructive/30 transition-all duration-300 hover:shadow-soft hover:-translate-y-1 bg-card/50 backdrop-blur"
               >
                 <CardContent className="pt-6 space-y-4">
-                  <div className="w-12 h-12 rounded-full bg-gradient-to-br from-gold to-primary flex items-center justify-center">
-                    <feature.icon className="w-6 h-6 text-white" />
+                  <div className="w-12 h-12 rounded-full bg-gradient-to-br from-destructive/80 to-destructive flex items-center justify-center">
+                    <stat.icon className="w-6 h-6 text-white" />
+                  </div>
+                  <div className="text-3xl font-serif font-bold text-destructive">
+                    {stat.number}
                   </div>
                   <h3 className="text-xl font-serif font-semibold text-foreground">
-                    {feature.title}
+                    {stat.title}
                   </h3>
                   <p className="text-muted-foreground leading-relaxed">
-                    {feature.description}
+                    {stat.description}
                   </p>
                 </CardContent>
               </Card>
             ))}
+          </div>
+          
+          <div className="mt-12 text-center">
+            <p className="text-lg text-muted-foreground italic max-w-3xl mx-auto">
+              These numbers represent real people — mothers, students, children, engineers, teachers. Each statistic is a life interrupted, a dream deferred, a family shattered. Please remember us in your prayers.
+            </p>
           </div>
         </div>
       </div>
