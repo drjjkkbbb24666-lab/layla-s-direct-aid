@@ -87,7 +87,7 @@ export const Hero = () => {
           </div>
 
           {/* Scroll indicator */}
-          <div className="pt-16 animate-bounce text-center">
+          <div className="pt-8 animate-bounce text-center">
             <div className="w-6 h-10 border-2 border-muted-foreground/30 rounded-full mx-auto flex items-start justify-center p-2">
               <div className="w-1.5 h-3 bg-primary rounded-full" />
             </div>
