@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
 import { useState } from "react";
+import khartoumPhoto from "@/assets/khartoum-university.jpg";
 import nairobiPhoto from "@/assets/nairobi-living.jpg";
 
 export const Story = () => {
@@ -10,23 +11,11 @@ export const Story = () => {
     <section className="py-20 bg-gradient-to-b from-background to-secondary/30">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
-          <div className="max-w-4xl mx-auto space-y-12">
-            {/* Hero text moved here */}
-            <div className="text-xl md:text-2xl lg:text-3xl font-light text-foreground leading-relaxed space-y-4 text-center">
-              <p className="font-semibold">My name is Layla —</p>
-              <p>I fled Sudan hidden inside a lorry meant for cargo, not humans.</p>
-              <p>I watched relatives die in front of me.</p>
-              <p>I escaped RSF checkpoints by inches.</p>
-              <p>But I carried one thing through the war, the borders, the bloodshed — my laptop.</p>
-              <p className="italic">Pray for Sudan but also help us, whatever way you can.</p>
-              <p className="pt-4">I am a 21-year-old Sudanese refugee, a computer science student whose education was shattered by war.</p>
-              <p className="font-semibold">But I'm still coding. I'm still learning. I'm still fighting for a future they tried to destroy.</p>
-            </div>
-
+          <div className="grid md:grid-cols-2 gap-12 items-start">
             {/* Story text */}
             <div className="space-y-6">
-              <h2 className="text-4xl md:text-5xl font-serif font-bold text-foreground mb-6 text-center">
-                My Story
+              <h2 className="text-4xl md:text-5xl font-serif font-bold text-foreground mb-6">
+                My Name Is Layla — This Is My Story
               </h2>
               
               <div className="space-y-4 text-lg text-muted-foreground leading-relaxed">
@@ -165,8 +154,22 @@ export const Story = () => {
               </Dialog>
             </div>
 
-            {/* Image - Nairobi */}
-            <div className="max-w-2xl mx-auto animate-fade-in">
+            {/* Images */}
+            <div className="space-y-6 animate-fade-in">
+              <div className="relative group">
+                <div className="absolute inset-0 bg-gradient-to-br from-gold/20 to-rose/20 rounded-2xl blur-xl group-hover:blur-2xl transition-all" />
+                <div className="relative">
+                  <img 
+                    src={khartoumPhoto} 
+                    alt="University of Khartoum before the war" 
+                    className="rounded-2xl shadow-xl w-full h-auto"
+                  />
+                  <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4 rounded-b-2xl">
+                    <p className="text-white text-sm font-medium">University of Khartoum — where my dreams began</p>
+                  </div>
+                </div>
+              </div>
+
               <div className="relative group">
                 <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-gold/20 rounded-2xl blur-xl group-hover:blur-2xl transition-all" />
                 <div className="relative">
