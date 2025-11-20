@@ -48,13 +48,20 @@ export const Hero = () => {
             <div className="order-1 md:order-2 text-center md:text-left space-y-8 animate-fade-in">
               {/* Name */}
               <h1 className="text-6xl md:text-7xl lg:text-8xl font-serif font-bold text-foreground mb-4">
-                Amina Layla
+                Layla
               </h1>
               
               {/* Tagline */}
-              <p className="text-xl md:text-2xl lg:text-3xl font-light text-muted-foreground leading-relaxed">
-                "From Khartoum's classrooms to Nairobi's code cafes — rebuilding a future through tech."
-              </p>
+              <div className="text-xl md:text-2xl lg:text-3xl font-light text-muted-foreground leading-relaxed space-y-4">
+                <p className="font-semibold">My name is Layla —</p>
+                <p>I fled Sudan hidden inside a lorry meant for cargo, not humans.</p>
+                <p>I watched relatives die in front of me.</p>
+                <p>I escaped RSF checkpoints by inches.</p>
+                <p>But I carried one thing through the war, the borders, the bloodshed — my laptop.</p>
+                <p className="italic">Pray for Sudan but also help us, whatever way you can.</p>
+                <p className="pt-4">I am a 21-year-old Sudanese refugee, a computer science student whose education was shattered by war.</p>
+                <p className="font-semibold">But I'm still coding. I'm still learning. I'm still fighting for a future they tried to destroy.</p>
+              </div>
 
               {/* CTA Button */}
               <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start items-center pt-8">
