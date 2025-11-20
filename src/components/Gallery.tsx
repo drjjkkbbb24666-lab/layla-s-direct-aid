@@ -7,9 +7,11 @@ import sudanFlag from "@/assets/sudan-flag.jpg";
 const donationHistory = [
   { amount: 12, date: "Recent" },
   { amount: 24, date: "Recent" },
+  { amount: 1.5, date: "Recent" },
+  { amount: 3, date: "Recent" },
 ];
 
-const totalDonated = 36;
+const totalDonated = 40.5;
 const goalAmount = 1000; // Goal amount
 const progressPercentage = (totalDonated / goalAmount) * 100;
 
