@@ -60,7 +60,7 @@ export const Hero = () => {
             <div className="order-1 md:order-2 text-center md:text-left space-y-8 animate-fade-in">
               {/* Name */}
               <h1 className="text-6xl md:text-7xl lg:text-8xl font-serif font-bold text-foreground mb-4">
-                Layla
+                Layla Amina: A Voice Unbound
               </h1>
               
               {/* Tagline */}
