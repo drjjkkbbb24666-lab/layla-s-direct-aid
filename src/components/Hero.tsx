@@ -33,7 +33,7 @@ export const Hero = () => {
         <div className="max-w-6xl mx-auto">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             {/* Photo */}
-            <div className="order-2 md:order-1 animate-fade-in">
+            <div className="order-2 md:order-1 animate-fade-in space-y-6">
               <div className="relative">
                 <div className="absolute inset-0 bg-gradient-to-br from-gold to-rose rounded-3xl blur-2xl opacity-30" />
                 <img 
@@ -41,6 +41,18 @@ export const Hero = () => {
                   alt="Amina Layla" 
                   className="relative rounded-3xl shadow-2xl w-full h-auto object-cover"
                 />
+              </div>
+              
+              {/* CTA Button */}
+              <div className="flex justify-center md:justify-start">
+                <Button 
+                  onClick={scrollToDonate}
+                  size="lg"
+                  className="bg-gradient-to-r from-gold to-primary hover:shadow-glow transition-all duration-300 text-lg px-8 py-6 group"
+                >
+                  Support Me via Crypto
+                  <ArrowDown className="ml-2 group-hover:translate-y-1 transition-transform" />
+                </Button>
               </div>
             </div>
 
@@ -53,26 +65,7 @@ export const Hero = () => {
               
               {/* Tagline */}
               <div className="text-xl md:text-2xl lg:text-3xl font-light text-muted-foreground leading-relaxed space-y-4">
-                <p className="font-semibold">My name is Layla —</p>
-                <p>I fled Sudan hidden inside a lorry meant for cargo, not humans.</p>
-                <p>I watched relatives die in front of me.</p>
-                <p>I escaped RSF checkpoints by inches.</p>
-                <p>But I carried one thing through the war, the borders, the bloodshed — my laptop.</p>
-                <p className="italic">Pray for Sudan but also help us, whatever way you can.</p>
-                <p className="pt-4">I am a 21-year-old Sudanese refugee, a computer science student whose education was shattered by war.</p>
-                <p className="font-semibold">But I'm still coding. I'm still learning. I'm still fighting for a future they tried to destroy.</p>
-              </div>
-
-              {/* CTA Button */}
-              <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start items-center pt-8">
-                <Button 
-                  onClick={scrollToDonate}
-                  size="lg"
-                  className="bg-gradient-to-r from-gold to-primary hover:shadow-glow transition-all duration-300 text-lg px-8 py-6 group"
-                >
-                  Support Me via Crypto
-                  <ArrowDown className="ml-2 group-hover:translate-y-1 transition-transform" />
-                </Button>
+...
               </div>
             </div>
           </div>
