@@ -10,7 +10,7 @@ const donationHistory = [
 ];
 
 const totalDonated = 36;
-const goalAmount = 200; // Example goal
+const goalAmount = 1000; // Goal amount
 const progressPercentage = (totalDonated / goalAmount) * 100;
 
 export const Gallery = () => {
