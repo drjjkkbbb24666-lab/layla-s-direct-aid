@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowDown } from "lucide-react";
-import laylaPhoto from "@/assets/sudan-people.jpg";
+import khartoumPhoto from "@/assets/khartoum-university.jpg";
 import sudanFlag from "@/assets/sudan-flag-clean.png";
 
 export const Hero = () => {
@@ -37,8 +37,8 @@ export const Hero = () => {
               <div className="relative">
                 <div className="absolute inset-0 bg-gradient-to-br from-gold to-rose rounded-3xl blur-2xl opacity-30" />
                 <img 
-                  src={laylaPhoto} 
-                  alt="Amina Layla" 
+                  src={khartoumPhoto} 
+                  alt="University of Khartoum before the war" 
                   className="relative rounded-3xl shadow-2xl w-full h-auto object-cover"
                 />
               </div>
@@ -48,20 +48,9 @@ export const Hero = () => {
             <div className="order-1 md:order-2 text-center md:text-left space-y-8 animate-fade-in">
               {/* Name */}
               <h1 className="text-6xl md:text-7xl lg:text-8xl font-serif font-bold text-foreground mb-4">
-                Layla
+                Layla Amina
               </h1>
               
-              {/* Tagline */}
-              <div className="text-xl md:text-2xl lg:text-3xl font-light text-muted-foreground leading-relaxed space-y-4">
-                <p className="font-semibold">My name is Layla —</p>
-                <p>I fled Sudan hidden inside a lorry meant for cargo, not humans.</p>
-                <p>I watched relatives die in front of me.</p>
-                <p>I escaped RSF checkpoints by inches.</p>
-                <p>But I carried one thing through the war, the borders, the bloodshed — my laptop.</p>
-                <p className="italic">Pray for Sudan but also help us, whatever way you can.</p>
-                <p className="pt-4">I am a 21-year-old Sudanese refugee, a computer science student whose education was shattered by war.</p>
-                <p className="font-semibold">But I'm still coding. I'm still learning. I'm still fighting for a future they tried to destroy.</p>
-              </div>
 
               {/* CTA Button */}
               <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start items-center pt-8">
